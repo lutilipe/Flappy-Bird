@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Pixel";
+    src: url("../fonts/Pixel.ttf");
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0D262D;
+    color: #fff;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+}
+
+#screen {
+    position: relative;
+    border: 5px solid black;
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    background-image: url("../imgs/scenario.jpg");
+    overflow: hidden;
+
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+
+}
+
+.bird {
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.pair-of-barriers {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barrier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barrier .border {
+    height: 30px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid black;
+}
+
+.barrier .body {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.pressToStart {
+    font-size: 120px;
+    font-family: "Pixel";
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    line-height: 0;
+    color: rgba(255, 255, 255, 0.75);
+
+    transition: 300ms;
+}
+
+.pressToStart:hover {
+    color: white;
+    font-size: 130px;
+}
+
+.progress {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-family: "Pixel";
+    font-size: 70px;
+    z-index: 2;
+}
+
+.pressToRestart {
+    font-size: 120px;
+    font-family: "Pixel";
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    line-height: 0;
+    color: rgba(255, 255, 255);
+    z-index: 2;
+}
+
+.hide {
+    display: none !important;
+}
+
+
+
+
+
