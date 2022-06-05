@@ -9,5 +9,3 @@
 - Realese the key to make it get down
 - If the bird colide with some obstacules, click on "RESTART"
 
-
-HAVE FUN!!! :heart:
